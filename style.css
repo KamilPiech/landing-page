@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+:root {
+    --dark-background-color: #1f2937;
+    --light-blue-color: #3882f6;
+    --hero-main-text-color: #f9faf8;
+    --quote-bg-color: #e5e7eb;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-color: var(--dark-background-color);
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.header-topbar {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 36px;
+    margin-bottom: 20px;
+}
+
+.header-topbar-logo {
+    color: var(--hero-main-text-color);
+    font-size: 24px;
+}
+
+.header-topbar-links {
+    color: var(--quote-bg-color)
+}
+
+.header-topbar-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+.header-hero {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 0 18px;
+}
+
+.header-hero-left-col {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 18px;
+}
+
+.header-hero-right-col {
+    display: flex;
+    flex: 1;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--quote-bg-color);
+    margin: 0 18px;
+}
+
+.header-hero-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--hero-main-text-color);
+}
+
+.header-hero-text {
+    color: var(--quote-bg-color);
+    font-size: 18px;
+}
+
+.header-hero-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--light-blue-color);
+    color: var(--hero-main-text-color);
+    border-radius: 10px;
+    border: none;
+}
+
+.header-hero-img {
+    background-color: var(--quote-bg-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
